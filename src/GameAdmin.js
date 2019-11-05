@@ -49,12 +49,14 @@ class GameAdmin extends React.Component{
      <PlayerTwo name = {this.state.playerTwoName} playerTwoScore={this.state.playerTwoScore} playerTwoButton = {this.state.playerTwoButton} playerTwoClickedPlayEventHandler = {this.playerTwoClickedPlayEventHandler}/>
      <div/>
 <form>
+    <div style={{padding: '1em'}}>
     <label>Set name for Player One: </label>
  <input type="text" value={this.state.playerOneName} onChange={this.playerOneNameChanged} />
- <div margin ="5"/>
+ </div>
+ <div style={{padding: '1em'}}>
  <label>Set namefor Player Two: </label>
  <input type="text" value={this.state.playerTwoName} onChange={this.playerTwoNameChanged} />
- <div />
+ </div>
  </form>
  </div>
         );

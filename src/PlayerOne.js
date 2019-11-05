@@ -10,11 +10,11 @@ class PlayerOne extends React.Component{
 
 render(){
     return(
-        <div>
-        <h2>PlayerOne</h2>
+        <div style={{border : 'solid', borderColor: 'violet', borderWidth: 'thin', padding: '1em', margin: '1em'}}>
+        <h2 >PlayerOne</h2>
         <label>My name is {this.props.name}</label>
         <div/>
-        <label>Played number of times {this.props.playerOneScore}     </label>
+        <label >Played number of times {this.props.playerOneScore}     </label>
         <button onClick={(e) => this.props.playerOneClickedPlayEventHandler( e)} disabled={!this.props.playerOneButton}>{this.props.playerOneButton ? 'Play':'This user is playing now'} </button>
         </div>
     );

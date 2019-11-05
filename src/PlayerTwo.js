@@ -11,7 +11,7 @@ class PlayerTwo extends React.Component{
 
 render(){
     return(
-        <div>
+        <div style={{border : 'solid', borderColor: 'violet', borderWidth: 'thin', padding: '1em', margin: '1em'}}>
         <h2>PlayerTwo</h2>
         <label>My name is {this.props.name}</label>
         <div/>
