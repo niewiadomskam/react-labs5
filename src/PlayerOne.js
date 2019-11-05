@@ -15,7 +15,7 @@ render(){
         <label>My name is {this.props.name}</label>
         <div/>
         <label >Played number of times {this.props.playerOneScore}     </label>
-        <button onClick={(e) => this.props.playerOneClickedPlayEventHandler( e)} disabled={!this.props.playerOneButton}>{this.props.playerOneButton ? 'Play':'This user is playing now'} </button>
+        <button style={{margin: '1em'}} onClick={(e) => this.props.playerOneClickedPlayEventHandler( e)} disabled={!this.props.playerOneButton}>{this.props.playerOneButton ? 'Play':'This user is playing now'} </button>
         </div>
     );
 }

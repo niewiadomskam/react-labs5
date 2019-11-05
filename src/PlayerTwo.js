@@ -13,10 +13,12 @@ render(){
     return(
         <div style={{border : 'solid', borderColor: 'violet', borderWidth: 'thin', padding: '1em', margin: '1em'}}>
         <h2>PlayerTwo</h2>
+        <div className='clearfix'/>        
         <label>My name is {this.props.name}</label>
-        <div/>
-        <label>Played number of times {this.props.playerTwoScore}     </label>
-        <button disabled={!this.props.playerTwoButton} onClick={(e) => this.props.playerTwoClickedPlayEventHandler( e)} >{this.props.playerTwoButton ? 'Play':'This user is playing now'} </button>
+        <div className='clearfix'> 
+        <label className="btn btn-secondary">Played number of times {this.props.playerTwoScore}     </label>
+        <button className="float-right"  style={{margin: '1em'}} disabled={!this.props.playerTwoButton} onClick={(e) => this.props.playerTwoClickedPlayEventHandler( e)} >{this.props.playerTwoButton ? 'Play':'This user is playing now'} </button>
+        </div>
         </div>
     );
 }
